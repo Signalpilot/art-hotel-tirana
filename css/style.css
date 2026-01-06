@@ -257,6 +257,7 @@ h1, h2, h3, h4 {
     z-index: 1000;
     padding: 1.5rem 0;
     transition: all var(--transition-medium);
+    background: linear-gradient(to bottom, rgba(13, 11, 9, 0.8) 0%, rgba(13, 11, 9, 0) 100%);
 }
 
 .nav.scrolled {
@@ -286,6 +287,7 @@ h1, h2, h3, h4 {
     font-size: 1.5rem;
     color: var(--color-cream);
     letter-spacing: 0.1em;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .logo-sub {
@@ -306,6 +308,7 @@ h1, h2, h3, h4 {
     letter-spacing: 0.1em;
     color: var(--color-cream-soft);
     position: relative;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .nav-link::after {
@@ -404,9 +407,9 @@ h1, h2, h3, h4 {
     inset: 0;
     background: linear-gradient(
         to bottom,
-        rgba(13, 11, 9, 0.4) 0%,
-        rgba(13, 11, 9, 0.6) 50%,
-        rgba(13, 11, 9, 0.9) 100%
+        rgba(13, 11, 9, 0.7) 0%,
+        rgba(13, 11, 9, 0.75) 50%,
+        rgba(13, 11, 9, 0.95) 100%
     );
 }
 
@@ -423,12 +426,14 @@ h1, h2, h3, h4 {
     letter-spacing: 0.3em;
     color: var(--color-gold);
     margin-bottom: 2rem;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-title {
     font-size: clamp(3rem, 10vw, 7rem);
     line-height: 1;
     margin-bottom: 2rem;
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
 .title-line {
@@ -445,6 +450,7 @@ h1, h2, h3, h4 {
     color: var(--color-cream-soft);
     margin-bottom: 3rem;
     line-height: 1.8;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-actions {
@@ -909,7 +915,7 @@ h1, h2, h3, h4 {
 }
 
 .location-map iframe {
-    filter: grayscale(100%) invert(92%) contrast(90%);
+    filter: grayscale(50%) brightness(0.8) contrast(1.1);
 }
 
 /* =====================================================
@@ -1016,6 +1022,15 @@ a.contact-value:hover {
 .form-group textarea {
     resize: vertical;
     min-height: 120px;
+}
+
+.form-group input[type="date"] {
+    color-scheme: dark;
+}
+
+.form-group input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.8);
+    cursor: pointer;
 }
 
 .form-row {
