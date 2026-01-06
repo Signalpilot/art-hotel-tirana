@@ -404,8 +404,8 @@ h1, h2, h3, h4 {
     inset: 0;
     background: linear-gradient(
         to bottom,
-        rgba(13, 11, 9, 0.4) 0%,
-        rgba(13, 11, 9, 0.6) 50%,
+        rgba(13, 11, 9, 0.7) 0%,
+        rgba(13, 11, 9, 0.75) 50%,
         rgba(13, 11, 9, 0.9) 100%
     );
 }
@@ -429,6 +429,7 @@ h1, h2, h3, h4 {
     font-size: clamp(3rem, 10vw, 7rem);
     line-height: 1;
     margin-bottom: 2rem;
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
 .title-line {
@@ -445,6 +446,7 @@ h1, h2, h3, h4 {
     color: var(--color-cream-soft);
     margin-bottom: 3rem;
     line-height: 1.8;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
 }
 
 .hero-actions {
